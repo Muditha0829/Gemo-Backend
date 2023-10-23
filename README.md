@@ -9,24 +9,23 @@ This backend component is a crucial part of our research project.
 
 To set up and run the Gemo-Backend locally, follow these steps:
 
-### Prerequisites
+## Prerequisites
 
 - Python 3.x
 - pip
 - Virtual Environment (venv)
 
-### Installation
+## Installation
 
 1. Create a Python virtual environment named 'myenv' 
 
 **python3 -m venv myenv** 
 
-
-2.Activate the virtual environment:
+2. Activate the virtual environment:
 
 **source myenv/bin/activate**
 
-3. Istall required libraries
+3. Install required libraries
 
 **pip3 install joblib**
 **pip3 install Flask**
