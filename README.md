@@ -1,18 +1,39 @@
 # Gemo-Backend
 Final Year Research Project developed by students of Sri Lanka Institute of Information Technology
 
-## Initializing the backend
-Enter the below lines one by one in the terminal.
+## Project Overview
 
-1. **python3 -m venv myenv** 
-2. **source myenv/bin/activate**
-3. **pip3 install joblib**
-4. **pip3 install Flask**
-5. **pip3 install scikit-learn**
-6. **pip3 install pandas**
+This backend component is a crucial part of our research project.
 
-After initialzing the above libraries, check the configured environment by the following command,
+## Getting Started
 
+To set up and run the Gemo-Backend locally, follow these steps:
+
+### Prerequisites
+
+- Python 3.x
+- pip
+- Virtual Environment (venv)
+
+### Installation
+
+1. Create a Python virtual environment named 'myenv' 
+
+**python3 -m venv myenv** 
+
+
+2.Activate the virtual environment:
+
+**source myenv/bin/activate**
+
+3. Istall required libraries
+
+**pip3 install joblib**
+**pip3 install Flask**
+**pip3 install scikit-learn**
+**pip3 install pandas**
+
+4. Confirm that the required libraries are installed by running
 **pip3 list**
 
 ## Run the application
