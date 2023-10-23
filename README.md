@@ -13,10 +13,10 @@ Enter the below lines one by one in the terminal.
 
 After initialzing the above libraries, check the configured environment by the following command,
 
-pip3 list
+**pip3 list**
 
 ## Run the application
 
 :rocket: Launch the app by entering the follwing line in the terminal!
 
-python app.py
+**python app.py**
