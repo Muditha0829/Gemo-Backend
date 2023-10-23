@@ -43,3 +43,19 @@ pip3 list
 ```bash
 python app.py
 ```
+## Contributing
+
+We welcome contributions to the Gemo-Backend.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Acknowledgments
+
+We would like to express our gratitude to the open-source community, project supervisors and the contributors of the libraries we used in this project.
+
+## Contact
+
+For questions, feedback, or inquiries, please contact us at muditha1gms@gmail.com. Monawa hri thynwnam kiyapan :smile:
+
