@@ -16,3 +16,5 @@ After initialzing the above libraries, check the configured environment by the f
 pip3 list
 
 # Run the application
+
+python app.py
