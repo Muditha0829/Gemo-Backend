@@ -18,7 +18,7 @@ To set up and run the Gemo-Backend locally, follow these steps:
 ## Installation
 
 1. Create a Python virtual environment named 'myenv' 
-
+```bash
 - **python3 -m venv myenv** 
 
 2. Activate the virtual environment:
