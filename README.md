@@ -1,7 +1,7 @@
 # Gemo-Backend
 Final Year Research Project developed by students of Sri Lanka Institute of Information Technology
 
-# Initializing the backend
+## Initializing the backend
 Enter the below lines one by one in the terminal.
 
 1. python3 -m venv myenv 
@@ -15,6 +15,6 @@ After initialzing the above libraries, check the configured environment by the f
 
 pip3 list
 
-# Run the application
+## Run the application
 
 python app.py
