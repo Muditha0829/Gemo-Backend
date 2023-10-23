@@ -23,19 +23,20 @@ python3 -m venv myenv
 ```
 
 2. Activate the virtual environment:
-
+```bash
 **source myenv/bin/activate**
-
+```
 3. Install required libraries
-
-- **pip3 install joblib**
-- **pip3 install Flask**
-- **pip3 install scikit-learn**
-- **pip3 install pandas**
-
+```bash
+pip3 install joblib
+pip3 install Flask
+pip3 install scikit-learn
+pip3 install pandas
+```
 4. Confirm that the required libraries are installed by running
-- **pip3 list**
-
+```bash
+pip3 list
+```
 ## Run the application
 
 :rocket: Launch the app by entering the follwing line in the terminal!
