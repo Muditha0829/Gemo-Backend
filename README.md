@@ -19,7 +19,7 @@ To set up and run the Gemo-Backend locally, follow these steps:
 
 1. Create a Python virtual environment named 'myenv' 
 
-**python3 -m venv myenv** 
+- **python3 -m venv myenv** 
 
 2. Activate the virtual environment:
 
@@ -27,16 +27,16 @@ To set up and run the Gemo-Backend locally, follow these steps:
 
 3. Install required libraries
 
-**pip3 install joblib**
-**pip3 install Flask**
-**pip3 install scikit-learn**
-**pip3 install pandas**
+- **pip3 install joblib**
+- **pip3 install Flask**
+- **pip3 install scikit-learn**
+- **pip3 install pandas**
 
 4. Confirm that the required libraries are installed by running
-**pip3 list**
+- **pip3 list**
 
 ## Run the application
 
 :rocket: Launch the app by entering the follwing line in the terminal!
 
-**python app.py**
+- **python app.py**
