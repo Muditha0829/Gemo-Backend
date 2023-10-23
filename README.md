@@ -24,7 +24,7 @@ python3 -m venv myenv
 
 2. Activate the virtual environment:
 ```bash
-**source myenv/bin/activate**
+source myenv/bin/activate
 ```
 3. Install required libraries
 ```bash
@@ -40,5 +40,6 @@ pip3 list
 ## Run the application
 
 :rocket: Launch the app by entering the follwing line in the terminal!
-
-- **python app.py**
+```bash
+python app.py
+```
