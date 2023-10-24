@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from GemstonePricePredictor import GemstonePricePredictor
+from PricePrediction.src.GemstonePricePredictor import GemstonePricePredictor
 
 app = Flask(__name__)
 

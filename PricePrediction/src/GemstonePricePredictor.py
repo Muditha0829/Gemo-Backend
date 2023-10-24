@@ -1,10 +1,17 @@
 import joblib
 import pandas as pd
 from sklearn.preprocessing import  OrdinalEncoder
+import os
 
 
 class GemstonePricePredictor:
-    def __init__(self, model_path='random_forest_model.pkl'):
+    def __init__(self, model_path='../model/random_forest_model.pkl'):
+        # Get the current directory of this script
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        
+        # Combine the current directory with the model filename
+        model_path = os.path.join(current_dir, model_path)
+
         self.loaded_model = joblib.load(model_path)
 
     def calculate_price(self, input_data):
