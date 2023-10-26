@@ -1,10 +1,15 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from PricePrediction.src.GemstonePricePredictor import GemstonePricePredictor
 
 app = Flask(__name__)
 
 # Create an instance of GemstonePricePredictor
 predictor = GemstonePricePredictor()
+
+@app.route('/')
+def index():
+    # Render the HTML template
+    return render_template('index.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
