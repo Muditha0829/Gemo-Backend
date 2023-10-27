@@ -34,4 +34,5 @@ def recommend():
 
 
 if __name__ == '__main__':
+    print("The Flask Server is Running. Please try API calls from the Postman for now")
     app.run(host='0.0.0.0', port=5001)  # Make the server accessible on your local network
