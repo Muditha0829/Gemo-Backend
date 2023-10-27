@@ -174,20 +174,20 @@ def index():
 #         return jsonify({'recommendation': recommendation})
 #     except Exception as e:
 #         return jsonify({'error': str(e)})
-@app.route('/recommend', methods=['POST'])
-def recommend_gemstone():
-    try:
-        user_input = request.get_json()
+# @app.route('/recommend', methods=['POST'])
+# def recommend_gemstone():
+#     try:
+#         user_input = request.get_json()
         
-        # Extract the text from the JSON request using the "user_input" field
-        description = user_input.get('user_input')
+#         # Extract the text from the JSON request using the "user_input" field
+#         description = user_input.get('user_input')
 
-        recommendation = inference_gemstone(description)
-        return jsonify({'recommendation': recommendation})
-    except Exception as e:
-        return jsonify({'error': str(e)})
+#         recommendation = inference_gemstone(description)
+#         return jsonify({'recommendation': recommendation})
+#     except Exception as e:
+#         return jsonify({'error': str(e)})
 
 
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5001)
+# if __name__ == '__main__':
+#     app.run(host='0.0.0.0', port=5001)
