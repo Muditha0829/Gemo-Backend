@@ -161,9 +161,9 @@ def inference_gemstone(description):
     pred = np.argmax(pred, axis=1)
     return class_dict_rev[pred[0]]
 
-@app.route('/')
-def index():
-    return render_template('index.html')
+# @app.route('/')
+# def index():
+#     return render_template('index.html')
 
 # @app.route('/recommend', methods=['POST'])
 # def recommend_gemstone():
