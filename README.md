@@ -32,6 +32,10 @@ pip3 install joblib
 pip3 install Flask
 pip3 install scikit-learn
 pip3 install pandas
+pip3 install opencv-python
+pip3 install tensorflow
+pip3 install nltk
+
 ```
 4. Confirm that the required libraries are installed by running
 ```bash

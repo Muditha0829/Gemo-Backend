@@ -10,4 +10,4 @@ Recommendation/model/query-analysis.h5
 CutPrediction/model/
 
 # Ignore ColorClarityIdentification model
-ColorClarityIdentification/
+ColorClarityIdentification/model/
