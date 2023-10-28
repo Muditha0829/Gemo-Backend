@@ -5,6 +5,7 @@ body {
     background-repeat: no-repeat; /* Prevent image from repeating */
     background-size: cover; /* Scale the image to cover the entire viewport */
     background-attachment: fixed; /* Keep the background fixed while scrolling */
+    animation: zoomBackground 10s infinite alternate; /* Apply the zoom animation */
 }
 
 /* In your CSS file (styles.css) */
@@ -15,6 +16,7 @@ body {
     width: 230px; /* Adjust to your desired width */
     height: auto;
     margin-left: 10;
+    /* animation: rotateImage 5s linear infinite;  */
 }
 
 header h1 {
@@ -47,4 +49,22 @@ li {
     margin-bottom: 10px;
     text-shadow: none; /* Remove text shadow from list items */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes zoomBackground {
+    0% {
+        background-size: 100% 100%;
+    }
+    100% {
+        background-size: 110% 110%;
+    }
+}
+
+@keyframes rotateImage {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
