@@ -5,3 +5,9 @@ PricePrediction/model/random_forest_model.pkl
 # Ignore Recommendation model query-analysis.pkl and query-analysis.h5
 Recommendation/model/query-analysis.pkl
 Recommendation/model/query-analysis.h5
+
+# Ignore CutPrediction model 
+CutPrediction/model/
+
+# Ignore ColorClarityIdentification model
+ColorClarityIdentification/
