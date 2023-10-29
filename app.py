@@ -4,6 +4,7 @@ import os
 from PricePrediction.src.GemstonePricePredictor import GemstonePricePredictor
 from Recommendation.src.GemstoneRecommendation import GemstoneRecommendation 
 from ColorClarityIdentification.src.ColorClarityIdentification import GemIdentificationModel
+from CutPrediction.src.GemstoneCutPredictor import GemstoneCutPredictor
 
 app = Flask(__name__)
 
@@ -15,6 +16,9 @@ predictor = GemstonePricePredictor()
 
 # Create an instance of colorclarityidentificator
 colorclarityidentificator = GemIdentificationModel()
+
+# Create an instance of the GemstoneCutPredictor class
+gemstone_predictor = GemstoneCutPredictor()
 
 @app.route('/')
 def index():
@@ -63,7 +67,31 @@ def identify_gem():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
+@app.route('/cutpredict', methods=['POST'])
+def predict_gemstone_cut():
+    if 'image' not in request.files:
+        return jsonify({'error': 'No image file provided'})
 
+    image_file = request.files['image']
+
+    # Check if the file is empty
+    if image_file.filename == '':
+        return jsonify({'error': 'Empty file'})
+
+    try:
+        # Save the uploaded image temporarily
+        image_path = 'temp_image.jpg'
+        image_file.save(image_path)
+
+        # Use the GemstoneCutPredictor to predict the gemstone cut
+        predicted_cut = gemstone_predictor.predict_cut(image_path)
+        
+        # Remove the temporary image after processing
+        os.remove(image_path)
+
+        return jsonify({'predicted_cut': predicted_cut})
+    except Exception as e:
+        return jsonify({'error': str(e)})
 
 
 
