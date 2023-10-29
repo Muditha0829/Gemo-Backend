@@ -11,3 +11,5 @@ CutPrediction/model/
 
 # Ignore ColorClarityIdentification model
 ColorClarityIdentification/model/
+
+__pycache__

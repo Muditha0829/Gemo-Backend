@@ -28,13 +28,15 @@ source myenv/bin/activate
 ```
 3. Install required libraries
 ```bash
-pip3 install joblib
 pip3 install Flask
-pip3 install scikit-learn
+pip3 install joblib
 pip3 install pandas
-pip3 install opencv-python
+pip3 install scikit-learn
 pip3 install tensorflow
+pip3 install opencv-python
 pip3 install nltk
+pip3 install Pillow
+
 
 ```
 4. Confirm that the required libraries are installed by running
