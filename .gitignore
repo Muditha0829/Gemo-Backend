@@ -12,4 +12,6 @@ CutPrediction/model/
 # Ignore ColorClarityIdentification model
 ColorClarityIdentification/model/
 
+*.h5
+*.pkl
 __pycache__
